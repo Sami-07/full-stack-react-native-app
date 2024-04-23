@@ -18,7 +18,7 @@ export default function App() {
     )
   }
   return (
-    <SafeAreaView className='bg-[#161622] h-full '>
+    <SafeAreaView className='bg-primary h-full '>
       <ScrollView contentContainerStyle={{
         height: "100%"
       }}>

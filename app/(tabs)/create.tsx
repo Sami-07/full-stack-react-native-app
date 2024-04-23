@@ -92,7 +92,7 @@ const Create = () => {
   };
 
   return (
-    <SafeAreaView className="bg-black h-full">
+    <SafeAreaView className="bg-primary h-full">
       <ScrollView className="px-4 my-6">
         <Text className="text-2xl text-white font-psemibold">Upload Video</Text>
 
@@ -120,7 +120,7 @@ const Create = () => {
               />
             ) : (
               <View className="w-full h-40 px-4 bg-gray-800 rounded-2xl border border-black-200 flex justify-center items-center">
-                <View className="w-14 h-14 border border-dashed border-orange-500 rounded-lg flex justify-center items-center">
+                <View className="w-14 h-14 border border-dashed border-[#E0FF00] rounded-lg flex justify-center items-center">
                   <Image
                     source={icons.upload}
                     resizeMode="contain"

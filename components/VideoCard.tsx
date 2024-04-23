@@ -2,6 +2,7 @@ import { View, Text, Image, TouchableOpacity } from "react-native"
 import { icons } from "../constants"
 import { useState } from "react"
 import { ResizeMode, Video } from "expo-av"
+import { FaHeart } from "react-icons/fa"
 export default function VideoCard({ videContent }: { videContent: any }) {
     const { title, thumbnail, video, creator } = videContent
     const { username, avatar } = creator
@@ -10,7 +11,7 @@ export default function VideoCard({ videContent }: { videContent: any }) {
         <View className="flex-col items-center px-4 mb-14">
             <View className="flex-row gap-3 items-start">
                 <View className="justify-center items-center flex-row flex-1">
-                    <View className="w-[46px] h-[46px] rounded-lg border border-orange-400 justify-center items-center p-0.5">
+                    <View className="w-[46px] h-[46px] rounded-lg border border[#E0FF00] justify-center items-center p-0.5">
                         <Image source={{ uri: avatar }}
                             className="w-full h-full rounded-lg"
                             resizeMode="cover"
@@ -22,7 +23,8 @@ export default function VideoCard({ videContent }: { videContent: any }) {
                     </View>
                 </View>
                 <View className="pt-2">
-                    <Image source={icons.menu} className="w-5 h-5" resizeMode="contain" />
+                    <Image source={icons.unlike} className="w-5 h-5" resizeMode="contain" />
+                   
                 </View>
             </View>
             {

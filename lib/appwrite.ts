@@ -1,13 +1,18 @@
+
 import { Alert } from 'react-native';
+// @ts-ignore
+import {ENDPOINT,PLATFORM,PROJECT_ID,DATABASE_ID, USER_COLLECTION_ID, VIDEOS_COLLECTION_ID, STORAGE_ID } from "@env";
 import { Account, ID, Client, Avatars, Databases, Query, Storage } from 'react-native-appwrite';
+
+
 export const appwriteConfig = {
-    endpoint: process.env.ENDPOINT,
-    platform: process.env.PLATFORM,
-    projectId: process.env.PROJECT_ID,
-    databaseId: process.env.DATABASE_ID,
-    userCollectionId: process.env.USER_COLLECTION_ID,
-    videosCollectionId: process.env.VIDEOS_COLLECTION_ID,
-    storageId: process.env.STORAGE_ID
+    endpoint: ENDPOINT,
+    platform: PLATFORM,
+    projectId: PROJECT_ID,
+    databaseId: DATABASE_ID,
+    userCollectionId: USER_COLLECTION_ID,
+    videosCollectionId: VIDEOS_COLLECTION_ID,
+    storageId: STORAGE_ID
 }
 
 const { endpoint, platform, projectId, databaseId, userCollectionId, videosCollectionId, storageId } = appwriteConfig

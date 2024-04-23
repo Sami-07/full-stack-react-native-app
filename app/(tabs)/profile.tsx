@@ -24,7 +24,7 @@ const Profile = () => {
     router.replace("/sign-in");
   }
   return (
-    <SafeAreaView className='bg-black h-full '>
+    <SafeAreaView className='bg-primary h-full '>
       <FlatList
         data={posts}
         keyExtractor={(item) => item.$id}

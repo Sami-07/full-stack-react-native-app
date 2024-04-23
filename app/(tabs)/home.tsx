@@ -22,7 +22,7 @@ const Home = () => {
   }
   // console.log("hook", posts)
   return (
-    <SafeAreaView className='bg-black h-full '>
+    <SafeAreaView className='bg-primary h-full '>
       <FlatList
         data={posts}
         keyExtractor={(item) => item.$id}
